@@ -2,7 +2,7 @@ $(document).ready(function() {
     // 主選單
     var windowWidth = $(window).width();
     var li = $('.main_navbar>li')
-    if (windowWidth > 1300) {
+    if (windowWidth > 1320) {
         li.mouseenter(function() {
             $(this).find($('.dropdown-menu')).toggleClass('active');
             $(this).siblings(li).find('.dropdown-menu').removeClass('active');
@@ -37,5 +37,17 @@ $(document).ready(function() {
         $('.navbar').toggleClass('show');
     });
 
+    // footer
+    $('footer .top').slideUp();
+    $('.svg').click(function() {
+        $('.top').slideToggle();
+    })
+
+    // top
+    $("#top").click(function() {
+        $("html,body").animate({
+            scrollTop: 0
+        }, 500);
+    });
 
 })

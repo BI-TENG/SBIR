@@ -81,6 +81,7 @@ nav .container {
 .navbar {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     align-items: flex-end;
     padding: 0;
 }
@@ -249,7 +250,7 @@ nav .container {
     }
     .logo_img {
         left: 50%;
-        bottom: 0;
+        bottom: 3px;
         transform: translateX(-50%);
     }
     .burger {
@@ -301,7 +302,9 @@ nav .container {
         background: #00263F;
         overflow-y: auto;
         overflow-x: hidden;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: baseline;
         padding: .5rem;
         transition: .5s;
     }
@@ -375,6 +378,11 @@ nav .container {
 }
 
 @media (max-width:768px) {
+    .logo_img {
+        top: 50%;
+        bottom: auto;
+        transform: translate(-50%, -50%);
+    }
     .logo_img img {
         content: url(../images/手機.png);
     }
@@ -395,7 +403,7 @@ nav .container {
     margin-bottom: 3rem;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1320px) {
     .main {
         margin-top: 4.9rem;
     }
@@ -504,7 +512,7 @@ footer .top {
 }
 
 .fixed .fixed_btn {
-    margin-bottom: .5rem;
+    margin-bottom: .7rem;
 }
 
 .fixed .fixed_btn:last-of-type {

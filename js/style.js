@@ -28,6 +28,8 @@ $(document).ready(function() {
             $(this).find('a').toggleClass('active');
             $(this).siblings(li).find('a').removeClass('active');
         });
+
+        $('.navbar a').attr('tabindex', '-1');
     };
 
     // 漢堡開關
@@ -35,6 +37,9 @@ $(document).ready(function() {
     $('.burger').click(function() {
         $(this).toggleClass('open');
         $('.navbar').toggleClass('show');
+        if ($('.burger').addClass('open')) {
+            $('.navbar a').attr('tabindex', '');
+        }
     });
 
     // footer

@@ -11,6 +11,7 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Noto+Sans+TC:wght@100;300;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&display=swap" rel="stylesheet">
     <!-- slick -->
     <link rel="stylesheet" type="text/css" href="./slick/slick.css">
@@ -259,22 +260,177 @@
         <!-- links -->
         <div class="links">
             <div class="container">
+                <a title="快速鍵-中央內容區" href="#content" accesskey="C" id="content">:::</a>
                 <div class="links_box">
                     <a href="" title="線上申請">
-                        <img src="./images/Frame 18.png" alt="">
+                        <img src="./images/Frame 18.png" aria-hidden="true">
                     </a>
                 </div>
 
                 <div class="links_box">
                     <a href="" title="下載專區">
-                        <img src="./images/Frame 19.png" alt="">
+                        <img src="./images/Frame 19.png" aria-hidden="true">
                     </a>
                 </div>
 
                 <div class="links_box">
                     <a href="" title="常見問題">
-                        <img src="./images/Frame 20.png" alt="">
+                        <img src="./images/Frame 20.png" aria-hidden="true">
                     </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- news -->
+        <div class="news">
+            <div class="container">
+                <h2>最新消息</h2>
+
+                <div class="tab_title">
+                    <ul id="tabs" class="tabList owl-carousel owl-theme" role="tablist">
+                        <li role="presentation">
+                            <a id="tab1" href="#panel1" onclick="showTab(1);return false;" role="tab" aria-controls="panel1" aria-selected="false">計畫公告</a>
+                        </li>
+
+                        <li role="presentation">
+                            <a id="tab2" href="#panel2" onclick="showTab(2);return false;" role="tab" aria-controls="panel2" aria-selected="false">轉知快訊</a>
+                        </li>
+
+                        <li role="presentation">
+                            <a id="tab3" href="#panel3" onclick="showTab(3);return false;" role="tab" aria-controls="panel3" aria-selected="false">縣府消息</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab_content news_box">
+                    <div id="panel1" role="tabpanel" aria-labelledby="tab1">
+                        <div class="inner">
+                            <h3>計畫公告</h3>
+                            <div class="inner_box">
+                                <img src="./images/news_1.png" alt="">
+
+                                <div class="news_txt">
+                                    <div class="field">
+                                        <a href="" title="">
+                                            <p class="date">2021-12-10</p>
+                                            <p class="txt">
+                                                計畫公告!111年度臺東縣一站式產業輔導暨綜合計畫~開跑囉！111年度臺東縣一站式產業輔導暨綜合計畫~開跑囉！111年度臺東縣一站式產業輔導暨綜合計畫~開跑囉！ 111年度臺東縣一站式產業輔導暨綜合計畫~開跑囉！111年度臺東縣一站式產業輔導暨綜合計畫~開跑囉！
+                                            </p>
+                                        </a>
+                                    </div>
+
+                                    <div class="field">
+                                        <a href="" title="">
+                                            <p class="date">2021-12-10</p>
+                                            <p class="txt">【111年度臺東縣一站式產業輔導暨綜合計畫】開跑囉！</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="field">
+                                        <a href="" title="">
+                                            <p class="date">2021-12-10</p>
+                                            <p class="txt">【111年度臺東縣一站式產業輔導暨綜合計畫】開跑囉！</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="more_btn_box">
+                                    <a href="" class="more_btn" title="看更多計畫公告資訊">MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="panel2" role="tabpanel" aria-labelledby="tab2">
+                        <div class="inner">
+                            <h3>轉知快訊</h3>
+                            <div class="inner_box">
+                                <img src="./images/news_2.png" alt="">
+
+                                <div class="news_txt">
+                                    <div class="field">
+                                        <a href="" title="">
+                                            <p class="date">2021-12-10</p>
+                                            <p class="txt">轉知快訊【111年度臺東縣一站式產業輔導暨綜合計畫】開跑囉！</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="field">
+                                        <a href="" title="">
+                                            <p class="date">2021-12-10</p>
+                                            <p class="txt">【111年度臺東縣一站式產業輔導暨綜合計畫】開跑囉！</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="field">
+                                        <a href="" title="">
+                                            <p class="date">2021-12-10</p>
+                                            <p class="txt">【111年度臺東縣一站式產業輔導暨綜合計畫】開跑囉！</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="more_btn_box">
+                                    <a href="" class="more_btn" title="看更多轉知快訊資訊">MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="panel3" role="tabpanel" aria-labelledby="tab3">
+                        <div class="inner">
+                            <h3>縣府消息</h3>
+                            <div class="inner_box">
+                                <img src="./images/news_3.png" alt="">
+
+                                <div class="news_txt">
+                                    <div class="field">
+                                        <a href="" title="">
+                                            <p class="date">2021-12-10</p>
+                                            <p class="txt">縣府消息【111年度臺東縣一站式產業輔導暨綜合計畫】開跑囉！</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="field">
+                                        <a href="" title="">
+                                            <p class="date">2021-12-10</p>
+                                            <p class="txt">【111年度臺東縣一站式產業輔導暨綜合計畫】開跑囉！</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="field">
+                                        <a href="" title="">
+                                            <p class="date">2021-12-10</p>
+                                            <p class="txt">【111年度臺東縣一站式產業輔導暨綜合計畫】開跑囉！【111年度臺東縣一站式產業輔導暨綜合計畫】開跑囉！</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="more_btn_box">
+                                    <a href="" class="more_btn" title="看更多縣府消息資訊">MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 成果案數 -->
+        <div class="case">
+            <div class="container">
+                <h2>成果案數</h2>
+                <p class="small_label">(101年至110年11月止)</p>
+                <div class="case_box">
+                    <div class="total col-3">
+                        <h3>申請件數</h3>
+                        <p>14,520</p>
+                    </div>
+
+                    <div class="total col-3">
+                        <h3>通過件數</h3>
+                        <p>10,761</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -455,7 +611,7 @@
         <div class="fixed">
             <div class="fixed_btn" id="top">
                 <a href="javascript:;" title="回到網頁頂部">
-                    <svg width="40" height="40" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="50" height="50" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="43" cy="43" r="43" fill="#F7B028" />
                         <path d="M57 36.8811L43.5 22L30 36.8811" stroke="#00263F" stroke-width="7"
                             stroke-linecap="round" stroke-linejoin="round" />
@@ -489,6 +645,32 @@
     <!-- style -->
     <script src="./js/style.js"></script>
     <script src="./js/index.js"></script>
+
+    <script>
+        // aria tabs
+        var OpenTab;
+
+        function showTab(num) {
+            try {
+                if (OpenTab != undefined) {
+                    var OldTabID = document.getElementById('tab' + OpenTab);
+                    var OldPanelID = document.getElementById('panel' + OpenTab);
+                    OldTabID.className = '';
+                    OldPanelID.className = 'hide';
+                    OldTabID.setAttribute('aria-selected', false);
+                    OldPanelID.setAttribute('aria-hidden', true);
+                }
+                var TabID = document.getElementById('tab' + num);
+                var PanelID = document.getElementById('panel' + num);
+                TabID.className = 'selected';
+                PanelID.className = 'selected';
+                TabID.setAttribute('aria-selected', true);
+                PanelID.setAttribute('aria-hidden', false);
+                OpenTab = num;
+            } catch (e) {}
+        }
+        showTab(1);
+    </script>
 </body>
 
 </html>

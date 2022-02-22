@@ -9,5 +9,5 @@ $(document).ready(function() {
         slidesToScroll: 1
     });
 
-    $('.slick-dots li button').attr('tabindex', '-2');
+    $('.slick-dots li button').attr('tabindex', '-1');
 })

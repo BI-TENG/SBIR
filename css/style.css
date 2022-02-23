@@ -480,9 +480,14 @@ footer .top {
     margin-bottom: 2rem;
 }
 
-.down {
+.down_box {
     display: flex;
     justify-content: space-around;
+}
+
+#footer {
+    color: #fff;
+    display: inline-block;
 }
 
 .right p {
@@ -537,7 +542,7 @@ footer .top {
         width: 23%;
         margin: 0 1% 1rem;
     }
-    .down {
+    .down_box {
         flex-direction: column;
     }
     .left {

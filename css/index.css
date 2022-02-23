@@ -200,6 +200,10 @@ h2::after {
     text-overflow: ellipsis;
 }
 
+.field a:hover .txt {
+    color: #1a7ab8;
+}
+
 @media (min-width: 300px) {
     .tab_title {
         display: block;
@@ -339,9 +343,12 @@ h2::after {
         box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
         border-radius: 10px;
         padding: .3rem 1.5rem;
+        transition: .5s;
     }
     .more_btn:hover {
         color: #fff;
+        transform: translateY(-0.25em);
+        transition: .5s;
     }
 }
 
@@ -381,7 +388,7 @@ h2::after {
 .case_box {
     display: flex;
     justify-content: center;
-    margin: 2rem 0;
+    margin: 2rem 0 4rem;
 }
 
 .total {
@@ -410,4 +417,74 @@ h2::after {
     background: #F1F1F1;
     box-shadow: 3px 4px 8px rgba(132, 132, 134, 0.25);
     margin-bottom: 0;
+    padding: 1rem;
+}
+
+.case_year {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.case_year a {
+    width: 17%;
+    margin: 0 1.5% 1.2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #1A7AB8;
+    background: #FFFFFF;
+    border: 2px solid #1A7AB8;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.case_year a:hover,
+.case_year a:focus {
+    color: #fff;
+    background: #1A7AB8;
+}
+
+@media (max-width:1200px) {
+    .total p {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width:1199px) {
+    .col-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .total {
+        margin-right: 0;
+    }
+}
+
+@media (max-width:625px) {
+    .case_year a {
+        width: 22%;
+        margin: 0 1.5% 1.2rem;
+    }
+}
+
+@media (max-width:500px) {
+    .total p {
+        font-size: 2rem;
+    }
+    .case_year a {
+        width: 30%;
+        margin: 0 1.66666% 1.2rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .col-3 {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width:375px) {
+    .case_year a {
+        width: 45%;
+        margin: 0 2.5% 1.2rem;
+    }
 }

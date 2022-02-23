@@ -421,16 +421,29 @@
             <div class="container">
                 <h2>成果案數</h2>
                 <p class="small_label">(101年至110年11月止)</p>
-                <div class="case_box">
-                    <div class="total col-3">
+                <div class="case_box" id="unique-id">
+                    <div id="myTargetElement" class="total col-3">
                         <h3>申請件數</h3>
-                        <p>14,520</p>
+                        <p class="case_total" data-value="14520"></p>
                     </div>
 
-                    <div class="total col-3">
+                    <div id="myTargetElement2" class="total col-3">
                         <h3>通過件數</h3>
-                        <p>10,761</p>
+                        <p class="case_total" data-value="10761"></p>
                     </div>
+                </div>
+
+                <div class="case_year">
+                    <a href="" title="110年">110年</a>
+                    <a href="" title="109年">109年</a>
+                    <a href="" title="108年">108年</a>
+                    <a href="" title="107年">107年</a>
+                    <a href="" title="106年">106年</a>
+                    <a href="" title="105年">105年</a>
+                    <a href="" title="104年">104年</a>
+                    <a href="" title="103年">103年</a>
+                    <a href="" title="102年">102年</a>
+                    <a href="" title="101年">101年</a>
                 </div>
             </div>
         </div>
@@ -585,23 +598,26 @@
             </div>
 
             <div class="down">
-                <div class="right">
-                    <p>計畫辦公室：95049 台東縣台東市傳廣路364號</p>
-                    <p>計劃管理機關：台東縣政府財政及經濟發展處產業發展科</p>
-                    <p>電話：(089)347-218</p>
-                    <p>傳真：(089)330-046</p>
-                    <p>信箱：service@taitungsbir.org</p>
-                </div>
-
-                <div class="left">
-                    <div>
-                        <p>指導單位</p>
-                        <img src="./images/經濟部.png" alt="">
+                <a title="快速鍵-下方服務專線區" href="#footer" accesskey="Z" id="footer">:::</a>
+                <div class="down_box">
+                    <div class="right">
+                        <p>計畫辦公室：95049 台東縣台東市傳廣路364號</p>
+                        <p>計劃管理機關：台東縣政府財政及經濟發展處產業發展科</p>
+                        <p>電話：(089)347-218</p>
+                        <p>傳真：(089)330-046</p>
+                        <p>信箱：service@taitungsbir.org</p>
                     </div>
 
-                    <div>
-                        <p>主辦單位</p>
-                        <img src="./images/台東縣政府.png" alt="">
+                    <div class="left">
+                        <div>
+                            <p>指導單位</p>
+                            <img src="./images/經濟部.png" alt="">
+                        </div>
+
+                        <div>
+                            <p>主辦單位</p>
+                            <img src="./images/台東縣政府.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -642,6 +658,9 @@
     <script src="./bootstrap/js/bootstrap.min.js"></script>
     <!-- slick -->
     <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <!-- countUp -->
+    <script src="./js/countUp.min.js"></script>
+    <script src="./js/scrollreveal.js"></script>
     <!-- style -->
     <script src="./js/style.js"></script>
     <script src="./js/index.js"></script>

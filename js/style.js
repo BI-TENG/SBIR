@@ -37,9 +37,6 @@ $(document).ready(function() {
     $('.burger').click(function() {
         $(this).toggleClass('open');
         $('.navbar').toggleClass('show');
-        if ($('.burger').addClass('open')) {
-            $('.navbar a').attr('tabindex', '');
-        }
     });
 
     // footer

@@ -208,26 +208,17 @@ nav .container {
     .container {
         max-width: 720px;
     }
-    nav .container {
-        max-width: 90%;
-    }
 }
 
 @media (min-width: 992px) {
     .container {
         max-width: 960px;
     }
-    nav .container {
-        max-width: 90%;
-    }
 }
 
 @media (min-width: 1200px) {
     .container {
         max-width: 1300px;
-    }
-    nav .container {
-        width: 85%;
     }
 }
 
@@ -237,7 +228,14 @@ nav .container {
     }
 }
 
-@media (max-width:1320px) {
+@media (min-width:1500px) {
+    nav .container {
+        width: 85%;
+        max-width: 1700px;
+    }
+}
+
+@media (max-width:1199px) {
     .mobile_link,
     .mobile_fixed_btn {
         display: block;

@@ -467,6 +467,9 @@ h2::after {
 }
 
 @media (max-width:500px) {
+    .case {
+        padding: 2rem 0;
+    }
     .total p {
         font-size: 2rem;
     }

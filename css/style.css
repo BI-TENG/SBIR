@@ -54,6 +54,15 @@ img {
     background: #fff;
 }
 
+@media (min-width:320px) {
+    #nav,
+    #left,
+    #content,
+    #footer {
+        font-size: 1rem;
+    }
+}
+
 
 /* ------------------------ 天 ------------------------ */
 

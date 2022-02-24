@@ -294,7 +294,7 @@ nav .container {
     }
     .navbar {
         width: 50vw;
-        height: calc(100% - 70px);
+        height: calc(100vh - 70px);
         position: fixed;
         top: 77px;
         right: -100%;
@@ -340,6 +340,9 @@ nav .container {
     }
     .main_navbar>li>a.active {
         color: #F7B028;
+    }
+    .main_navbar>li>a::before {
+        background: transparent;
     }
     .main_navbar>li>a i {
         display: block;

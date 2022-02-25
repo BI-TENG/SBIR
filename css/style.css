@@ -26,6 +26,7 @@ a:hover {
 
 input:focus,
 button:focus,
+select:focus,
 a:focus,
 .page-link:focus {
     outline: 3px dashed #B82D2C !important;

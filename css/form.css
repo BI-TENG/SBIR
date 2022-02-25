@@ -1,0 +1,145 @@
+/* ------------------------ firm ------------------------ */
+
+.form {
+    padding: 0 1rem;
+}
+
+.f_field {
+    margin-bottom: 1rem;
+}
+
+label {
+    color: #1A7AB8;
+    padding: 0 !important;
+}
+
+input {
+    letter-spacing: 3px;
+}
+
+.form-group input {
+    border: 2px solid #1A7AB8;
+    border-radius: 8px;
+    padding: .5rem 15px;
+}
+
+input.form-control-plaintext {
+    border: none;
+    background: #D6D6D6;
+}
+
+.form-group .row input {
+    width: 100%;
+}
+
+.password {
+    position: relative;
+}
+
+#password_img,
+#password_img_b {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 40px;
+    top: 48px;
+}
+
+.btn {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background: #1A7AB8;
+    border: 2px solid #1A7AB8;
+    border-radius: 8px;
+    margin-top: .8rem;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+@media (max-width:991px) {
+    .form {
+        padding: 0;
+    }
+    #content {
+        margin-left: 0;
+    }
+    #password_img,
+    #password_img_b {
+        right: 15px;
+    }
+}
+
+
+/* ------------------------ applicationa ------------------------ */
+
+h2 {
+    font-size: 1.25rem;
+    color: #1A7AB8;
+    border-bottom: 1px solid #1A7AB8;
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+
+.form-group p {
+    color: #1A7AB8;
+    margin-bottom: .5rem;
+}
+
+.form-group-title {
+    border-bottom: 1px solid #1A7AB8;
+    padding: 0 .2rem;
+}
+
+input[type=radio] {
+    position: relative;
+}
+
+.form-check-label {
+    color: #212529;
+}
+
+input[type=radio]:checked:after {
+    content: " ";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #767677;
+}
+
+select {
+    border: 2px solid #1A7AB8;
+    border-radius: 8px;
+}
+
+.form-check-label {
+    display: initial;
+}
+
+.form-check-label .color,
+.d-flex .color {
+    color: #5F5F5F;
+}
+
+.d-flex p {
+    margin-bottom: 0;
+}
+
+.form-group p.color_b {
+    color: inherit;
+}
+
+@media (max-width:991px) {
+    h2 {
+        padding: .5rem 0;
+    }
+}
+
+
+/* ------------------------ applicationa ------------------------ */

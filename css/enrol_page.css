@@ -25,26 +25,6 @@
     color: #212529;
 }
 
-.plan .fa-plus {
-    margin-right: .5rem;
-}
-
-.plan {
-    color: #fff;
-    background: #C83000;
-    border-radius: 8px;
-    padding: .5rem .8rem;
-    display: inline-block;
-}
-
-.plan:hover {
-    color: #fff;
-}
-
-.no_plan {
-    margin-top: 1rem;
-}
-
 
 /* ------------------------ 內容趨 ------------------------ */
 
@@ -79,27 +59,46 @@
     padding: 1rem 0;
 }
 
-.mobile_dropdown li a {
-    font-size: 1.125rem;
+.mobile_dropdown>li {
     padding: .3rem 1.2rem;
-}
-
-.mobile_dropdown li a.active {
-    color: #1A7AB8;
-    font-weight: 500;
     position: relative;
 }
 
-.mobile_dropdown li a.active::before {
+.mobile_dropdown li a {
+    font-size: 1.125rem;
+}
+
+.mobile_dropdown>li.active>a {
+    color: #1A7AB8;
+    font-weight: 500;
+}
+
+.mobile_dropdown>li.active::before {
     content: '';
     position: absolute;
-    top: 50%;
+    top: auto;
     left: 0;
-    transform: translateY(-50%);
     width: 5px;
     height: 25px;
     background: #1A7AB8;
     border-radius: 2px;
+}
+
+.m_dropdown_b {
+    padding-left: 3rem;
+}
+
+.m_dropdown_b li {
+    list-style: disc;
+}
+
+.m_dropdown_b li a {
+    padding: .3rem 0;
+}
+
+.m_dropdown_b li.active,
+.m_dropdown_b li.active a {
+    color: #1A7AB8;
 }
 
 @media (min-width:992px) {
@@ -124,87 +123,90 @@
         border-bottom: 1px solid #CDEBFF;
         padding: 0.3rem;
     }
-    .mobile_dropdown li:last-of-type a {
+    .mobile_dropdown>li:last-of-type a {
         border-bottom: none;
     }
-    .mobile_dropdown li a.active::before {
+    .mobile_dropdown li.active::before {
         background: transparent;
+    }
+    .m_dropdown_b {
+        display: none;
     }
 }
 
 
 /* ----------------- c_right ----------------- */
 
-.c_right p {
-    font-weight: 500;
+.mobile_local {
+    font-size: 1.125rem;
+    color: #fff;
+    background: #1A7AB8;
+    border-radius: 2px;
+    padding: .3rem 1rem;
+    margin: .2rem 0 1rem;
 }
 
-.case_title {
-    border-radius: 9px;
-    background: #CDEBFF;
-    box-shadow: 4px 4px 4px rgba(72, 72, 72, 0.5);
-    padding: 1rem;
-    margin-bottom: .2rem;
+.progressbar {
+    overflow: hidden;
+    counter-reset: step;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 0;
 }
 
-.case_inner {
-    padding: 1rem;
+.progressbar a {
+    display: inline;
 }
 
-.case_inner .row {
-    border-radius: 9px;
-    background: #F2F2F2;
-    box-shadow: 4px 4px 4px rgba(72, 72, 72, 0.5);
-    padding: 1rem 0;
+.progressbar a {
+    list-style-type: none;
+    color: #444;
+    text-transform: uppercase;
+    width: 25%;
+    float: left;
+    position: relative;
 }
 
-.case_inner .state {
-    color: #202E62;
-    text-align: right;
-    border-radius: 9px;
-    background: #CDEBFF;
-    line-height: 1.6;
-    margin-right: -15px;
-    margin-left: -15px;
-    padding: 1rem;
+.progressbar a.active {
+    color: #fff;
 }
 
-.no_pass {
-    color: #D14141;
+.progressbar a::before {
+    content: counter(step);
+    counter-increment: step;
+    width: 40px;
+    line-height: 40px;
+    display: block;
+    font-size: 1rem;
+    background: #C9C6C6;
+    border-radius: 50%;
+    margin: 0 auto;
+    z-index: 1;
 }
 
-.pass {
-    color: #137812;
+.progressbar a::after {
+    content: '';
+    width: 90%;
+    height: 2px;
+    background: #C9C6C6;
+    position: absolute;
+    left: -45%;
+    top: 20px;
+    z-index: -1;
 }
 
-.ing {
-    color: #0A6AB5;
+.progressbar a:first-child:after {
+    display: none;
 }
 
-@media (max-width:991px) {
-    .case_title,
-    .mobile_no {
+.progressbar a.active::before {
+    background: #1e67a2;
+}
+
+@media (min-width:992px) {
+    .mobile_local,
+    .progressbar {
         display: none;
-    }
-    .case_inner .row>div {
-        margin-bottom: .3rem;
-    }
-    .id::before {
-        content: attr(data-th)"：";
-    }
-    .id_b::before {
-        content: attr(data-th)"：";
-    }
-    .desktop {
-        position: relative;
-    }
-    .mobile_pass {
-        width: auto;
-        position: absolute;
-        top: 10px;
-        right: 0;
-    }
-    .case_inner .state {
-        text-align: left;
     }
 }

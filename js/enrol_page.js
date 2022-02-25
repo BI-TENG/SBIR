@@ -1,6 +1,6 @@
 $(document).ready(function() {
     var windowWidth = $(window).width();
-    if (windowWidth < 991) {
+    if (windowWidth < 992) {
         $('.mobile_dropdown').hide();
         $('.mobile_title').click(function() {
             $('.mobile_dropdown').slideToggle();

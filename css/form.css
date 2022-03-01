@@ -89,7 +89,7 @@ h2 {
 }
 
 .form-group-title {
-    border-bottom: 1px solid #1A7AB8;
+    border-bottom: 1px dashed #1A7AB8;
     padding: 0 .2rem;
 }
 
@@ -135,11 +135,16 @@ select {
     color: inherit;
 }
 
+textarea {
+    border: 2px solid #1A7AB8 !important;
+}
+
 @media (max-width:991px) {
     h2 {
         padding: .5rem 0;
     }
+    .col-md-11.pd {
+        padding: 0;
+        margin-bottom: .5rem;
+    }
 }
-
-
-/* ------------------------ applicationa ------------------------ */

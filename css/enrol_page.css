@@ -31,6 +31,19 @@
 
 /* ----------------- c_left ----------------- */
 
+.link_disabled {
+    color: #212529;
+    background: #D1D1D1;
+    border-radius: 8px;
+    padding: .2rem;
+}
+
+.link_disabled a:hover {
+    color: #212529;
+    opacity: 1;
+    cursor: initial;
+}
+
 .mobile_title {
     font-size: 1.125rem;
     text-align: center;
@@ -117,13 +130,15 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         padding: .5rem;
     }
+    .mobile_dropdown li {
+        border-bottom: 1px solid #CDEBFF;
+    }
     .mobile_dropdown li a {
         color: #1A7AB8;
         text-align: center;
-        border-bottom: 1px solid #CDEBFF;
         padding: 0.3rem;
     }
-    .mobile_dropdown>li:last-of-type a {
+    .mobile_dropdown>li:last-of-type {
         border-bottom: none;
     }
     .mobile_dropdown li.active::before {

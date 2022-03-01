@@ -103,3 +103,81 @@
         text-align: left;
     }
 }
+
+
+/* ----------------- under_review ----------------- */
+
+.unite {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.unite p {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-left: .5rem;
+}
+
+.review {
+    color: #C94800;
+}
+
+.review::before {
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.5rem;
+    font-weight: 900;
+    content: "\f304";
+}
+
+.review_pass {
+    color: #007E05;
+}
+
+.review_pass::before {
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.5rem;
+    font-weight: 900;
+    content: "\f00c";
+}
+
+.review_pass_btn {
+    color: #fff;
+    background: #1A7AB8;
+    border-radius: 8px;
+    text-align: center;
+    padding: .2rem;
+    margin-top: .5rem;
+}
+
+.review_pass_btn:hover {
+    color: #fff;
+}
+
+.review_no_pass {
+    color: #D14141;
+}
+
+.review_no_pass::before {
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.5rem;
+    font-weight: 900;
+    content: "\f00d";
+}
+
+.not_compliant {
+    color: #C94800;
+}
+
+.not_compliant::before {
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.5rem;
+    font-weight: 900;
+    content: "\f00d";
+}
+
+@media (max-width:575px) {
+    .unite {
+        justify-content: center;
+    }
+}

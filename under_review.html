@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/page_style.css">
     <link rel="stylesheet" href="./css/enrol_page.css">
+    <link rel="stylesheet" href="./css/case.css">
     <link rel="stylesheet" href="./css/form.css">
     <title>台東SBIR</title>
 </head>
@@ -24,8 +25,8 @@
 <body>
     <a href="#content" id="to_content" class="skip-nav" title="跳到主要內容" tabindex="1">跳到主要內容</a>
     <noscript>
-        您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。
-    </noscript>
+    您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。
+  </noscript>
 
     <!-- nav -->
     <nav>
@@ -242,11 +243,12 @@
                                     <a href="" title="">案件清單</a>
                                 </li>
 
-                                <li>
-                                    <a href="" title="">公司資料維護</a>
+                                <!-- 連結不能點 -->
+                                <li class="link_disabled">
+                                    <a href="javascript:;" title="">公司資料維護</a>
                                 </li>
 
-                                <li class="m_dropdown_btn active">
+                                <li>
                                     <a href="" title="">申請階段</a>
 
                                     <ul class="m_dropdown_b">
@@ -258,7 +260,7 @@
                                             <a href="" title="">基本資料2</a>
                                         </li>
 
-                                        <li class="active">
+                                        <li>
                                             <a href="" title="">基本資料3</a>
                                         </li>
 
@@ -268,24 +270,8 @@
                                     </ul>
                                 </li>
 
-                                <li>
-                                    <a href="" title="">審查階段</a>
-                                </li>
-
-                                <li>
-                                    <a href="" title="">計畫簽約</a>
-                                </li>
-
-                                <li>
-                                    <a href="" title="">執行階段(管考)_期中</a>
-                                </li>
-
-                                <li>
-                                    <a href="" title="">執行階段(管考)_期末</a>
-                                </li>
-
-                                <li>
-                                    <a href="" title="">計畫變更</a>
+                                <li class="active">
+                                    <a href="" title="">審核階段</a>
                                 </li>
                             </ul>
                         </div>
@@ -295,187 +281,45 @@
                     <div class="c_right col-lg-9 col-12">
                         <a title="快速鍵-中央內容區" href="#content" accesskey="C" id="content">:::</a>
                         <div class="mobile_local">
-                            申請階段
+                            審核階段
                         </div>
 
-                        <div class="progressbar">
-                            <a href="application_a.html" title="申請計畫基本資料1"></a>
-                            <a href="application_b.html" title="申請計畫基本資料2"></a>
-                            <a href="application_c.html" class="active" title="申請計畫基本資料3"></a>
-                            <a href="" title="應備資料上傳"></a>
-                        </div>
-
-                        <h2>申請計畫基本資料3</h2>
-                        <div class="form">
-                            <div class="form-group">
-                                <p class="form-group-title">是否進駐育成中心/開放實驗室、TTMAKER/利家工業區/深層海水創新研發中心</p>
-                                <div class="d-flex flex-wrap align-items-center">
-                                    <div class="form-check mr-4">
-                                        <input class="form-check-input" type="radio" name="new" id="radio1" value="" checked>
-                                        <label class="form-check-label" for="radio1">育成中心</label>
-                                    </div>
-
-                                    <div class="form-check mr-4">
-                                        <input class="form-check-input" type="radio" name="new" id="radio2" value="">
-                                        <label class="form-check-label" for="radio2">開放實驗室</label>
-                                    </div>
-
-                                    <div class="form-check mr-4">
-                                        <input class="form-check-input" type="radio" name="new" id="radio3" value="">
-                                        <label class="form-check-label" for="radio3">TTMAKER</label>
-                                    </div>
-
-                                    <div class="form-check mr-4">
-                                        <input class="form-check-input" type="radio" name="new" id="radio4" value="">
-                                        <label class="form-check-label" for="radio4">利家工業區</label>
-                                    </div>
-
-                                    <div class="form-check mr-4">
-                                        <input class="form-check-input" type="radio" name="new" id="radio5" value="">
-                                        <label class="form-check-label" for="radio5">深層海水創新研發中心</label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="new" id="radio6" value="">
-                                        <label class="form-check-label" for="radio6">否</label>
-                                    </div>
+                        <div class="upload">
+                            <div class="upload_title">
+                                <div class="row">
+                                    <div class="col-lg-6">檔案名稱</div>
+                                    <div class="col-lg-2">上傳資料</div>
+                                    <div class="col-lg-2">審核進度</div>
+                                    <div class="col-lg-2">備註</div>
                                 </div>
                             </div>
 
-                            <div class="form-group">
-                                <p class="form-group-title">是否為青創公司(公司負責人年齡20歲以上、未滿46歲)</p>
-                                <div class="d-flex flex-wrap align-items-center">
-                                    <div class="form-check mr-4">
-                                        <input class="form-check-input" type="radio" name="select" id="radio7" value="" checked>
-                                        <label class="form-check-label" for="radio7">是</label>
+                            <div class="upload_inner">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <p class="inner_title">審核簡報</p>
                                     </div>
 
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="select" id="radio8" value="">
-                                        <label class="form-check-label" for="radio8">否</label>
+                                    <div class="col-lg-2">
+                                        <div class="upload_btn_box">
+                                            <label for="file" class="upload_btn">上傳</label>
+                                            <input type="file" id="file" class="file">
+                                            <div class="format">pdf</div>
+                                        </div>
+
+                                        <div class="file_name_box">
+                                            <p class="file_name"></p>
+                                        </div>
                                     </div>
+
+                                    <div class="col-lg-2"></div>
+
+                                    <div class="col-lg-2"></div>
                                 </div>
                             </div>
 
-                            <div class="form-group">
-                                <p class="form-group-title">是否為新創公司(公司成立時間於5年內)</p>
-                                <div class="d-flex flex-wrap align-items-center">
-                                    <div class="form-check mr-4">
-                                        <input class="form-check-input" type="radio" name="select_b" id="radio9" value="" checked>
-                                        <label class="form-check-label" for="radio9">是</label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="select_b" id="radio10" value="">
-                                        <label class="form-check-label" for="radio10">否</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <p class="form-group-title">是否為中央地方攜手方案</p>
-                                <div class="d-flex flex-wrap">
-                                    <div class="form-check col-md-1">
-                                        <input class="form-check-input" type="radio" name="select_c" id="radio11" value="" checked>
-                                        <label class="form-check-label" for="radio11">是</label>
-                                    </div>
-
-                                    <div class="col-md-11 pd">
-                                        <label for="date" class="sr-only">推薦(函)日期</label>
-                                        <input type="date" class="form-control" id="date">
-                                    </div>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="select_c" id="radio12" value="">
-                                    <label class="form-check-label" for="radio12">否</label>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <p class="form-group-title">是否為離島地區之公司行號</p>
-                                <div class="d-flex flex-wrap align-items-center">
-                                    <div class="form-check mr-4">
-                                        <input class="form-check-input" type="radio" name="select_d" id="radio13" value="" checked>
-                                        <label class="form-check-label" for="radio13">澎湖</label>
-                                    </div>
-
-                                    <div class="form-check mr-4">
-                                        <input class="form-check-input" type="radio" name="select_d" id="radio14" value="">
-                                        <label class="form-check-label" for="radio14">金門</label>
-                                    </div>
-
-                                    <div class="form-check mr-4">
-                                        <input class="form-check-input" type="radio" name="select_d" id="radio15" value="">
-                                        <label class="form-check-label" for="radio15">馬祖</label>
-                                    </div>
-
-                                    <div class="form-check mr-4">
-                                        <input class="form-check-input" type="radio" name="select_d" id="radio16" value="">
-                                        <label class="form-check-label" for="radio16">小琉球</label>
-                                    </div>
-
-                                    <div class="form-check mr-4">
-                                        <input class="form-check-input" type="radio" name="select_d" id="radio17" value="">
-                                        <label class="form-check-label" for="radio17">綠島</label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="select_d" id="radio18" value="">
-                                        <label class="form-check-label" for="radio18">蘭嶼</label>
-                                    </div>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="select_d" id="radio19" value="">
-                                    <label class="form-check-label" for="radio19">否</label>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <p class="form-group-title">技術或智慧財產權移轉單位</p>
-                                <div class="form-group">
-                                    <label for="name">單位名稱：</label>
-                                    <input type="text" class="form-control" id="name" placeholder="請填全名">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="number">統一編號：</label>
-                                    <input type="number" class="form-control" id="number">
-                                </div>
-
-                                <p class="">項目</p>
-                                <div class="d-flex flex-wrap align-items-center">
-                                    <div class="form-check mr-4">
-                                        <input class="form-check-input" type="radio" name="select_e" id="radio20" value="" checked>
-                                        <label class="form-check-label" for="radio20">技術(關鍵智財)引進</label>
-                                    </div>
-
-                                    <div class="form-check mr-4">
-                                        <input class="form-check-input" type="radio" name="select_e" id="radio21" value="">
-                                        <label class="form-check-label" for="radio21">委託研究</label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="select_e" id="radio22" value="">
-                                        <label class="form-check-label" for="radio22">委託勞務</label>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="price">金額：</label>
-                                    <input type="number" class="form-control" id="price" placeholder="單位/千元">
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <p class="form-group-title">主要關鍵核心技術</p>
-                                <label for="textarea">請列出一項，並請簡述其核心技術之應用領域、產品或服務模式</label>
-                                <textarea class="form-control" id="textarea" rows="10"></textarea>
-                            </div>
-
-                            <div class="btn_box">
-                                <input type="submit" value="儲存，下一步資料上傳" class="btn">
+                            <div class="file_btn">
+                                <input type="submit" class="col-lg-3" value="送出申請">
                             </div>
                         </div>
                     </div>
@@ -489,10 +333,10 @@
         <div class="container">
             <a href="javascript:;" class="svg" title="網站導覽(展開/縮合)">
                 <svg width="100" height="46" viewBox="0 0 116 53" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path
-                        d="M54.88 1.49146C56.7048 0.0342827 59.2952 0.034282 61.12 1.49146L113.53 43.3429C117.225 46.2935 115.138 52.25 110.41 52.25H5.59028C0.861662 52.25 -1.22479 46.2935 2.47026 43.3429L54.88 1.49146Z"
-                        fill="#00263F" />
-                </svg>
+          <path
+            d="M54.88 1.49146C56.7048 0.0342827 59.2952 0.034282 61.12 1.49146L113.53 43.3429C117.225 46.2935 115.138 52.25 110.41 52.25H5.59028C0.861662 52.25 -1.22479 46.2935 2.47026 43.3429L54.88 1.49146Z"
+            fill="#00263F" />
+        </svg>
             </a>
 
             <div class="top">
@@ -614,13 +458,13 @@
             <div class="fixed_btn" id="top">
                 <a href="javascript:;" title="回到網頁頂部">
                     <svg width="50" height="50" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="43" cy="43" r="43" fill="#F7B028" />
-                        <path d="M57 36.8811L43.5 22L30 36.8811" stroke="#00263F" stroke-width="7"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M28.04 66H29.92V52.9H34.34V51.34H23.62V52.9H28.04V66ZM44.1067 66.28C47.7867 66.28 50.3467 63.32 50.3467 58.62C50.3467 53.94 47.7867 51.08 44.1067 51.08C40.4067 51.08 37.8467 53.92 37.8467 58.62C37.8467 63.32 40.4067 66.28 44.1067 66.28ZM44.1067 64.64C41.4667 64.64 39.7467 62.28 39.7467 58.62C39.7467 54.96 41.4667 52.7 44.1067 52.7C46.7267 52.7 48.4667 54.96 48.4667 58.62C48.4667 62.28 46.7267 64.64 44.1067 64.64ZM55.8305 66H57.6905V60.18H60.0905C63.3105 60.18 65.5105 58.74 65.5105 55.66C65.5105 52.44 63.2905 51.34 60.0105 51.34H55.8305V66ZM57.6905 58.68V52.86H59.7705C62.3705 52.86 63.6705 53.52 63.6705 55.66C63.6705 57.74 62.4305 58.68 59.8705 58.68H57.6905Z"
-                            fill="#00263F" />
-                    </svg>
+            <circle cx="43" cy="43" r="43" fill="#F7B028" />
+            <path d="M57 36.8811L43.5 22L30 36.8811" stroke="#00263F" stroke-width="7" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path
+              d="M28.04 66H29.92V52.9H34.34V51.34H23.62V52.9H28.04V66ZM44.1067 66.28C47.7867 66.28 50.3467 63.32 50.3467 58.62C50.3467 53.94 47.7867 51.08 44.1067 51.08C40.4067 51.08 37.8467 53.92 37.8467 58.62C37.8467 63.32 40.4067 66.28 44.1067 66.28ZM44.1067 64.64C41.4667 64.64 39.7467 62.28 39.7467 58.62C39.7467 54.96 41.4667 52.7 44.1067 52.7C46.7267 52.7 48.4667 54.96 48.4667 58.62C48.4667 62.28 46.7267 64.64 44.1067 64.64ZM55.8305 66H57.6905V60.18H60.0905C63.3105 60.18 65.5105 58.74 65.5105 55.66C65.5105 52.44 63.2905 51.34 60.0105 51.34H55.8305V66ZM57.6905 58.68V52.86H59.7705C62.3705 52.86 63.6705 53.52 63.6705 55.66C63.6705 57.74 62.4305 58.68 59.8705 58.68H57.6905Z"
+              fill="#00263F" />
+          </svg>
                 </a>
             </div>
 

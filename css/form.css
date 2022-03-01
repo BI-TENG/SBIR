@@ -41,7 +41,7 @@ input.form-control-plaintext {
     width: auto;
     height: auto;
     position: absolute;
-    right: 40px;
+    right: 19px;
     top: 48px;
 }
 
@@ -146,5 +146,188 @@ textarea {
     .col-md-11.pd {
         padding: 0;
         margin-bottom: .5rem;
+    }
+}
+
+@media (max-width:500px) {
+    h2 {
+        border-bottom: none;
+        padding-left: 1rem;
+        position: relative;
+    }
+    h2::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 5px;
+        height: 31px;
+        background: #1A7AB8;
+    }
+}
+
+
+/* ------------------------ upload ------------------------ */
+
+.upload_h2 {
+    margin-bottom: 0;
+}
+
+.upload {
+    padding: 0 1rem;
+}
+
+.upload_title {
+    color: #1A7AB8;
+    border-bottom: 1px solid #1A7AB8;
+    padding: 0 .3rem .5rem;
+}
+
+.upload_inner {
+    border-bottom: 1px solid #1A7AB8;
+    padding: 1rem .3rem;
+}
+
+.file_img_box {
+    display: flex;
+}
+
+.file_img {
+    margin-right: .5rem;
+}
+
+.file_img:last-of-type {
+    margin-right: 0;
+}
+
+.upload_btn_box {
+    position: relative;
+}
+
+label.upload_btn {
+    color: #fff;
+    text-align: center;
+    background: #007E05;
+    border-radius: 4px;
+    display: inline-block;
+    padding: .2rem .5rem !important;
+    margin-bottom: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+label.upload_btn::before {
+    content: url(../images/登出_2.png);
+    margin-right: .3rem;
+}
+
+label.field_disabled {
+    color: #212529;
+    text-align: center;
+    background: #F0F0F0;
+    border: 1px solid #212529;
+    border-radius: 4px;
+    display: inline-block;
+    padding: .2rem .5rem !important;
+    margin-bottom: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+label.field_disabled::before {
+    content: url(../images/登出_3.png);
+    margin-right: .3rem;
+}
+
+label.upload_btn:focus {
+    outline: 3px dashed #B82D2C;
+}
+
+input[type=file] {
+    font-size: initial;
+    width: 80.8px;
+    height: 36.38px;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    color: transparent;
+}
+
+.file_name {
+    margin-bottom: 0;
+}
+
+.time,
+.format {
+    font-size: .95rem;
+    color: #5F5F5F;
+}
+
+.inner_title {
+    color: #1A7AB8;
+    margin-bottom: 0;
+}
+
+.inner_txt {
+    font-size: 1.05rem;
+    color: #5F5F5F;
+    margin: .3rem 0 0;
+}
+
+.file_ing {
+    color: #1A7AB8;
+}
+
+.file_pass {
+    color: #007E05;
+}
+
+.file_no_pass {
+    color: #D14141;
+}
+
+.file_mobile {
+    margin-bottom: 1rem;
+}
+
+.file_btn {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.file_btn input {
+    color: #fff;
+    background: #C94800;
+    border-radius: 8px;
+    border: none;
+    padding: .5rem;
+}
+
+@media (min-width:991px) {
+    .upload_h2 {
+        display: none;
+    }
+    .file_mobile {
+        display: none;
+    }
+}
+
+@media (max-width:991px) {
+    .upload {
+        padding: 0;
+    }
+    .file_img_box {
+        margin-bottom: .3rem;
+    }
+    .upload_title {
+        display: none;
+    }
+    .upload_btn_box {
+        margin: .7rem 0;
+    }
+    .file_pc {
+        display: none;
     }
 }

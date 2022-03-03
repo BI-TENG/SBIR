@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="./css/page_style.css">
     <link rel="stylesheet" href="./css/enrol_page.css">
     <link rel="stylesheet" href="./css/case.css">
-    <link rel="stylesheet" href="./css/form.css">
     <title>台東SBIR</title>
 </head>
 
@@ -233,45 +232,49 @@
                     <div class="c_left col-lg-3 col-12">
                         <a title="快速鍵-中央內容區" href="#left" accesskey="L" id="left">:::</a>
                         <div>
-                            <div class="mobile_title">
+                            <a href="javascript:;" title="會員功能" class="mobile_title">
                                 <p>會員功能</p>
                                 <i class="fa-solid fa-angle-down"></i>
-                            </div>
+                            </a>
 
                             <ul class="mobile_dropdown">
                                 <li>
-                                    <a href="" title="">案件清單</a>
+                                    <a href="case.html" title="案件清單">案件清單</a>
                                 </li>
 
                                 <!-- 連結不能點 -->
                                 <li class="link_disabled">
-                                    <a href="javascript:;" title="">公司資料維護</a>
+                                    <a href="javascript:;" title="公司資料維護">公司資料維護</a>
                                 </li>
 
                                 <li>
-                                    <a href="" title="">申請階段</a>
+                                    <a href="javascript:;" title="申請階段">申請階段</a>
 
                                     <ul class="m_dropdown_b">
                                         <li>
-                                            <a href="" title="">基本資料1</a>
+                                            <a href="application_a.html" title="基本資料1">基本資料1</a>
                                         </li>
 
                                         <li>
-                                            <a href="" title="">基本資料2</a>
+                                            <a href="application_b.html" title="基本資料2">基本資料2</a>
                                         </li>
 
                                         <li>
-                                            <a href="" title="">基本資料3</a>
+                                            <a href="application_c.html" title="基本資料3">基本資料3</a>
                                         </li>
 
                                         <li>
-                                            <a href="" title="應備資料上傳">應備資料上傳</a>
+                                            <a href="application_d.html" title="應備資料上傳">應備資料上傳</a>
                                         </li>
                                     </ul>
                                 </li>
 
+                                <li>
+                                    <a href="under_review.html" title="審核階段">審核階段</a>
+                                </li>
+
                                 <li class="active">
-                                    <a href="" title="">審核階段</a>
+                                    <a href="plan.html" title="計畫簽約">計畫簽約</a>
                                 </li>
                             </ul>
                         </div>
@@ -281,80 +284,11 @@
                     <div class="c_right col-lg-9 col-12">
                         <a title="快速鍵-中央內容區" href="#content" accesskey="C" id="content">:::</a>
                         <div class="mobile_local">
-                            審核階段
+                            計畫簽約
                         </div>
 
-                        <div class="upload">
-                            <div class="upload_title">
-                                <div class="row">
-                                    <div class="col-lg-6">檔案名稱</div>
-                                    <div class="col-lg-2">上傳資料</div>
-                                    <div class="col-lg-2">審核進度</div>
-                                    <div class="col-lg-2">備註</div>
-                                </div>
-                            </div>
-
-                            <div class="upload_inner">
-                                <div class="row">
-                                    <div class="file_mobile col-4"></div>
-                                    <div class="file_mobile col-8"></div>
-
-                                    <div class="col-lg-6">
-                                        <p class="inner_title">審核簡報</p>
-                                    </div>
-
-                                    <div class="col-lg-2">
-                                        <div class="upload_btn_box">
-                                            <label for="file" class="upload_btn">上傳</label>
-                                            <input type="file" id="file" class="file">
-                                            <div class="format">pdf</div>
-                                        </div>
-
-                                        <div class="file_name_box">
-                                            <p class="file_name"></p>
-                                        </div>
-                                    </div>
-
-                                    <div class="file_pc col-lg-2"></div>
-
-                                    <div class="file_pc col-lg-2"></div>
-                                </div>
-                            </div>
-
-                            <div class="upload_inner">
-                                <div class="row">
-                                    <div class="file_mobile col-4"></div>
-                                    <div class="file_mobile col-8"></div>
-
-                                    <div class="col-lg-6">
-                                        <p class="inner_title">審核簡報</p>
-                                    </div>
-
-                                    <div class="col-lg-2">
-                                        <div class="upload_btn_box">
-                                            <label for="file1" class="upload_btn">上傳</label>
-                                            <input type="file" id="file1" class="file">
-                                            <div class="time">pdf</div>
-                                        </div>
-
-                                        <div class="file_name_box">
-                                            <p class="file_name"></p>
-                                        </div>
-                                    </div>
-
-                                    <div class="file_pc col-lg-2"></div>
-
-                                    <div class="file_pc col-lg-2"></div>
-                                </div>
-                            </div>
-
-
-                            <div class="file_btn">
-                                <input type="submit" class="col-lg-3 save" value="儲存草稿">
-                            </div>
-                            <div class="file_btn">
-                                <input type="submit" class="col-lg-3" value="送出申請">
-                            </div>
+                        <div class="unite review">
+                            <p>資料審核中</p>
                         </div>
                     </div>
                 </div>
@@ -523,7 +457,6 @@
     <!-- style -->
     <script src="./js/style.js"></script>
     <script src="./js/enrol_page.js"></script>
-    <script src="./js/upload.js"></script>
 </body>
 
 </html>

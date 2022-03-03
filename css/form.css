@@ -135,6 +135,10 @@ select {
     color: inherit;
 }
 
+.color {
+    color: transparent;
+}
+
 textarea {
     border: 2px solid #1A7AB8 !important;
 }
@@ -209,6 +213,7 @@ label.upload_btn {
     color: #fff;
     text-align: center;
     background: #007E05;
+    border: 1px solid #007E05;
     border-radius: 4px;
     display: inline-block;
     padding: .2rem .5rem !important;
@@ -246,8 +251,8 @@ label.upload_btn:focus {
 
 input[type=file] {
     font-size: initial;
-    width: 80.8px;
-    height: 36.38px;
+    width: 82.8px;
+    height: 38.38px;
     position: absolute;
     left: 0;
     z-index: -1;
@@ -255,12 +260,13 @@ input[type=file] {
 }
 
 .file_name {
+    word-break: break-word;
     margin-bottom: 0;
 }
 
 .time,
 .format {
-    font-size: .95rem;
+    font-size: .9rem;
     color: #5F5F5F;
 }
 
@@ -288,7 +294,7 @@ input[type=file] {
 }
 
 .file_mobile {
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 
 .file_btn {
@@ -303,6 +309,20 @@ input[type=file] {
     border-radius: 8px;
     border: none;
     padding: .5rem;
+}
+
+.file_btn .save {
+    color: #fff;
+    background: #1A7AB8;
+}
+
+.change_title {
+    display: flex;
+    align-items: center;
+}
+
+.change_title img {
+    margin-right: .5rem;
 }
 
 @media (min-width:991px) {

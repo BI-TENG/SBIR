@@ -1,10 +1,13 @@
 $(document).ready(function() {
     var windowWidth = $(window).width();
     if (windowWidth < 992) {
-        $('.mobile_dropdown').hide();
         $('.mobile_title').click(function() {
             $('.mobile_dropdown').slideToggle();
         });
+    };
+
+    if (windowWidth < 768) {
+        $('.color').addClass('sr-only');
     };
 
     $('.state').hide();

@@ -232,60 +232,40 @@
                     <div class="c_left col-lg-3 col-12">
                         <a title="快速鍵-中央內容區" href="#left" accesskey="L" id="left">:::</a>
                         <div>
-                            <div class="mobile_title">
+                            <a href="javascript:;" title="會員功能" class="mobile_title">
                                 <p>會員功能</p>
                                 <i class="fa-solid fa-angle-down"></i>
-                            </div>
+                            </a>
 
                             <ul class="mobile_dropdown">
                                 <li>
-                                    <a href="" title="">案件清單</a>
+                                    <a href="case.html" title="案件清單">案件清單</a>
                                 </li>
 
                                 <li>
-                                    <a href="" title="">公司資料維護</a>
+                                    <a href="firm.html" title="公司資料維護">公司資料維護</a>
                                 </li>
 
-                                <li class="m_dropdown_btn active">
-                                    <a href="" title="">申請階段</a>
+                                <li class="active">
+                                    <a href="javascript:;" title="申請階段">申請階段</a>
 
                                     <ul class="m_dropdown_b">
                                         <li>
-                                            <a href="" title="">基本資料1</a>
+                                            <a href="application_a.html" title="基本資料1">基本資料1</a>
                                         </li>
 
                                         <li class="active">
-                                            <a href="" title="">基本資料2</a>
+                                            <a href="application_b.html" title="基本資料2">基本資料2</a>
                                         </li>
 
                                         <li>
-                                            <a href="" title="">基本資料3</a>
+                                            <a href="application_c.html" title="基本資料3">基本資料3</a>
                                         </li>
 
                                         <li>
-                                            <a href="" title="">應備資料上傳</a>
+                                            <a href="application_d.html" title="應備資料上傳">應備資料上傳</a>
                                         </li>
                                     </ul>
-                                </li>
-
-                                <li>
-                                    <a href="" title="">審查階段</a>
-                                </li>
-
-                                <li>
-                                    <a href="" title="">計畫簽約</a>
-                                </li>
-
-                                <li>
-                                    <a href="" title="">執行階段(管考)_期中</a>
-                                </li>
-
-                                <li>
-                                    <a href="" title="">執行階段(管考)_期末</a>
-                                </li>
-
-                                <li>
-                                    <a href="" title="">計畫變更</a>
                                 </li>
                             </ul>
                         </div>
@@ -300,25 +280,25 @@
 
                         <div class="progressbar">
                             <a href="application_a.html" title="申請計畫基本資料1"></a>
-                            <a href="application_b.html" class="active" title="申請計畫基本資料2"></a>
-                            <a href="" title="申請計畫基本資料3"></a>
-                            <a href="" title="應備資料上傳"></a>
+                            <a href="application_b.html" title="申請計畫基本資料2" class="active"></a>
+                            <a href="application_c.html" title="申請計畫基本資料3"></a>
+                            <a href="application_d.html" title="應備資料上傳"></a>
                         </div>
 
                         <h2>申請計畫基本資料2</h2>
                         <div class="form">
                             <div class="form-group">
-                                <label for="firm">公司名稱：</label>
+                                <label for="firm">*公司名稱：</label>
                                 <input type="text" class="form-control" id="firm" placeholder="請輸入中文名稱">
                             </div>
 
                             <div class="form-group">
-                                <label for="address_b">通訊地址：</label>
+                                <label for="address_b">*通訊地址：</label>
                                 <input type="text" class="form-control" id="address_b">
                             </div>
 
                             <div class="form-group">
-                                <p class="form-group-title">計畫主持人</p>
+                                <p class="form-group-title">*計畫主持人</p>
                                 <div class="row">
                                     <div class="form-group col-md-6">
                                         <label for="name">姓名：</label>
@@ -350,7 +330,7 @@
                             </div>
 
                             <div class="form-group">
-                                <p class="form-group-title">計畫連絡人</p>
+                                <p class="form-group-title">*計畫連絡人</p>
                                 <div class="row">
                                     <div class="form-group col-md-6">
                                         <label for="name_c">姓名：</label>
@@ -382,19 +362,19 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="price">計畫總經費：</label>
+                                <label for="price">*計畫總經費：</label>
                                 <input type="number" class="form-control" id="price" placeholder="單位/千元">
                             </div>
 
                             <div class="form-group">
                                 <div class="row">
                                     <div class="form-group col-md-8">
-                                        <label for="price_b">補助款：</label>
+                                        <label for="price_b">*補助款：</label>
                                         <input type="number" class="form-control" id="price_b" placeholder="單位/千元">
                                     </div>
 
                                     <div class="form-group col-md-4">
-                                        <label for="price_c">%</label>
+                                        <label for="price_c" class="color">百分比：</label>
                                         <input type="number" class="form-control" id="price_c" placeholder="%">
                                     </div>
                                 </div>
@@ -403,12 +383,12 @@
                             <div class="form-group">
                                 <div class="row">
                                     <div class="form-group col-md-8">
-                                        <label for="price_d">自籌款：</label>
+                                        <label for="price_d">*自籌款：</label>
                                         <input type="number" class="form-control" id="price_d" placeholder="單位/千元">
                                     </div>
 
                                     <div class="form-group col-md-4">
-                                        <label for="price_e">%</label>
+                                        <label for="price_e" class="color">百分比：</label>
                                         <input type="number" class="form-control" id="price_e" placeholder="%">
                                     </div>
                                 </div>

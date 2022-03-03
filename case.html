@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/page_style.css">
     <link rel="stylesheet" href="./css/enrol_page.css">
+    <link rel="stylesheet" href="./css/case.css">
     <title>台東SBIR</title>
 </head>
 
@@ -227,37 +228,43 @@
         <div class="content">
             <div class="container">
                 <div class="row">
+                    <!-- 左側 -->
                     <div class="c_left col-lg-3 col-12">
                         <a title="快速鍵-中央內容區" href="#left" accesskey="L" id="left">:::</a>
                         <div>
-                            <div class="mobile_title">
+                            <a href="javascript:;" title="會員功能" class="mobile_title">
                                 <p>會員功能</p>
                                 <i class="fa-solid fa-angle-down"></i>
-                            </div>
+                            </a>
 
                             <ul class="mobile_dropdown">
-                                <li>
-                                    <a href="" class="active" title="">案件清單</a>
+                                <li class="active">
+                                    <a href="case.html" title="案件清單">案件清單</a>
                                 </li>
 
                                 <li>
-                                    <a href="">公司資料維護</a>
+                                    <a href="firm.html" title="公司資料維護">公司資料維護</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
+                    <!-- 右側 -->
                     <div class="c_right col-lg-9 col-12">
                         <a title="快速鍵-中央內容區" href="#content" accesskey="C" id="content">:::</a>
+                        <div class="mobile_local">
+                            案件清單
+                        </div>
                         <div>
-                            <a href="" class="plan"><i class="fa-solid fa-plus"></i>新計畫申請</a>
+                            <a href="application_a.html" title="新計畫申請" class="plan"><i
+                                    class="fa-solid fa-plus"></i>新計畫申請</a>
 
                             <!-- 尚未申請計畫的畫面 -->
                             <div class="no_plan">
-                                <p>目前尚未申請計畫</p>
+                                目前尚未申請計畫
                             </div>
 
-                            <!-- 之前有申請計畫的畫面 -->
+                            <!-- 已有申請計畫的畫面 -->
                             <div>
                                 <div class="case_title">
                                     <div class="row">

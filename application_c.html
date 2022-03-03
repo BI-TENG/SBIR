@@ -232,60 +232,40 @@
                     <div class="c_left col-lg-3 col-12">
                         <a title="快速鍵-中央內容區" href="#left" accesskey="L" id="left">:::</a>
                         <div>
-                            <div class="mobile_title">
+                            <a href="javascript:;" title="會員功能" class="mobile_title">
                                 <p>會員功能</p>
                                 <i class="fa-solid fa-angle-down"></i>
-                            </div>
+                            </a>
 
                             <ul class="mobile_dropdown">
                                 <li>
-                                    <a href="" title="">案件清單</a>
+                                    <a href="case.html" title="案件清單">案件清單</a>
                                 </li>
 
                                 <li>
-                                    <a href="" title="">公司資料維護</a>
+                                    <a href="firm.html" title="公司資料維護">公司資料維護</a>
                                 </li>
 
-                                <li class="m_dropdown_btn active">
-                                    <a href="" title="">申請階段</a>
+                                <li class="active">
+                                    <a href="javascript:;" title="申請階段">申請階段</a>
 
                                     <ul class="m_dropdown_b">
                                         <li>
-                                            <a href="" title="">基本資料1</a>
+                                            <a href="application_a.html" title="基本資料1">基本資料1</a>
                                         </li>
 
                                         <li>
-                                            <a href="" title="">基本資料2</a>
+                                            <a href="application_b.html" title="基本資料2">基本資料2</a>
                                         </li>
 
                                         <li class="active">
-                                            <a href="" title="">基本資料3</a>
+                                            <a href="application_c.html" title="基本資料3">基本資料3</a>
                                         </li>
 
                                         <li>
-                                            <a href="" title="應備資料上傳">應備資料上傳</a>
+                                            <a href="application_d.html" title="應備資料上傳">應備資料上傳</a>
                                         </li>
                                     </ul>
-                                </li>
-
-                                <li>
-                                    <a href="" title="">審查階段</a>
-                                </li>
-
-                                <li>
-                                    <a href="" title="">計畫簽約</a>
-                                </li>
-
-                                <li>
-                                    <a href="" title="">執行階段(管考)_期中</a>
-                                </li>
-
-                                <li>
-                                    <a href="" title="">執行階段(管考)_期末</a>
-                                </li>
-
-                                <li>
-                                    <a href="" title="">計畫變更</a>
                                 </li>
                             </ul>
                         </div>
@@ -301,14 +281,14 @@
                         <div class="progressbar">
                             <a href="application_a.html" title="申請計畫基本資料1"></a>
                             <a href="application_b.html" title="申請計畫基本資料2"></a>
-                            <a href="application_c.html" class="active" title="申請計畫基本資料3"></a>
-                            <a href="" title="應備資料上傳"></a>
+                            <a href="application_c.html" title="申請計畫基本資料3" class="active"></a>
+                            <a href="application_d.html" title="應備資料上傳"></a>
                         </div>
 
                         <h2>申請計畫基本資料3</h2>
                         <div class="form">
                             <div class="form-group">
-                                <p class="form-group-title">是否進駐育成中心/開放實驗室、TTMAKER/利家工業區/深層海水創新研發中心</p>
+                                <p class="form-group-title">*是否進駐育成中心/開放實驗室、TTMAKER/利家工業區/深層海水創新研發中心</p>
                                 <div class="d-flex flex-wrap align-items-center">
                                     <div class="form-check mr-4">
                                         <input class="form-check-input" type="radio" name="new" id="radio1" value="" checked>
@@ -343,7 +323,7 @@
                             </div>
 
                             <div class="form-group">
-                                <p class="form-group-title">是否為青創公司(公司負責人年齡20歲以上、未滿46歲)</p>
+                                <p class="form-group-title">*是否為青創公司(公司負責人年齡20歲以上、未滿46歲)</p>
                                 <div class="d-flex flex-wrap align-items-center">
                                     <div class="form-check mr-4">
                                         <input class="form-check-input" type="radio" name="select" id="radio7" value="" checked>
@@ -358,7 +338,7 @@
                             </div>
 
                             <div class="form-group">
-                                <p class="form-group-title">是否為新創公司(公司成立時間於5年內)</p>
+                                <p class="form-group-title">*是否為新創公司(公司成立時間於5年內)</p>
                                 <div class="d-flex flex-wrap align-items-center">
                                     <div class="form-check mr-4">
                                         <input class="form-check-input" type="radio" name="select_b" id="radio9" value="" checked>
@@ -373,7 +353,7 @@
                             </div>
 
                             <div class="form-group">
-                                <p class="form-group-title">是否為中央地方攜手方案</p>
+                                <p class="form-group-title">*是否為中央地方攜手方案</p>
                                 <div class="d-flex flex-wrap">
                                     <div class="form-check col-md-1">
                                         <input class="form-check-input" type="radio" name="select_c" id="radio11" value="" checked>
@@ -382,7 +362,7 @@
 
                                     <div class="col-md-11 pd">
                                         <label for="date" class="sr-only">推薦(函)日期</label>
-                                        <input type="date" class="form-control" id="date">
+                                        <input type="text" class="form-control" id="date" onfocus="(this.type = 'date')" placeholder="推薦(函)日期">
                                     </div>
                                 </div>
 
@@ -393,7 +373,7 @@
                             </div>
 
                             <div class="form-group">
-                                <p class="form-group-title">是否為離島地區之公司行號</p>
+                                <p class="form-group-title">*是否為離島地區之公司行號</p>
                                 <div class="d-flex flex-wrap align-items-center">
                                     <div class="form-check mr-4">
                                         <input class="form-check-input" type="radio" name="select_d" id="radio13" value="" checked>
@@ -433,7 +413,7 @@
                             </div>
 
                             <div class="form-group">
-                                <p class="form-group-title">技術或智慧財產權移轉單位</p>
+                                <p class="form-group-title">*技術或智慧財產權移轉單位</p>
                                 <div class="form-group">
                                     <label for="name">單位名稱：</label>
                                     <input type="text" class="form-control" id="name" placeholder="請填全名">
@@ -469,7 +449,7 @@
                             </div>
 
                             <div class="form-group">
-                                <p class="form-group-title">主要關鍵核心技術</p>
+                                <p class="form-group-title">*主要關鍵核心技術</p>
                                 <label for="textarea">請列出一項，並請簡述其核心技術之應用領域、產品或服務模式</label>
                                 <textarea class="form-control" id="textarea" rows="10"></textarea>
                             </div>

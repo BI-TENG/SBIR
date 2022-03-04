@@ -193,7 +193,7 @@
                         </li>
 
                         <li>
-                            <a href="application.html" title="線上申請" class="application">線上申請</a>
+                            <a href="login.html" title="線上申請" class="application">線上申請</a>
                         </li>
 
                         <!-- 手機版才會顯示 -->
@@ -239,7 +239,7 @@
 
                             <ul class="mobile_dropdown">
                                 <li>
-                                    <a href="" title="">案件清單</a>
+                                    <a href="case.html" title="案件清單">案件清單</a>
                                 </li>
 
                                 <!-- 連結不能點 -->
@@ -248,23 +248,23 @@
                                 </li>
 
                                 <li class="active">
-                                    <a href="" title="">申請階段</a>
+                                    <a href="avascript:;" title="申請階段">申請階段</a>
 
                                     <ul class="m_dropdown_b">
                                         <li class="active">
-                                            <a href="" title="">基本資料1</a>
+                                            <a href="application_a.html" title="基本資料1">基本資料1</a>
                                         </li>
 
                                         <li>
-                                            <a href="" title="">基本資料2</a>
+                                            <a href="application_b.html" title="基本資料2">基本資料2</a>
                                         </li>
 
                                         <li>
-                                            <a href="" title="">基本資料3</a>
+                                            <a href="application_c.html" title="基本資料3">基本資料3</a>
                                         </li>
 
                                         <li>
-                                            <a href="" title="應備資料上傳">應備資料上傳</a>
+                                            <a href="application_d.html" title="應備資料上傳">應備資料上傳</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -315,10 +315,12 @@
                                 <label for="plan">*計畫領域別</label>
                                 <select name="" id="plan">
                                     <option value="">食品生技</option>
-                                    <option value="">食品生技1</option>
-                                    <option value="">食品生技2</option>
-                                    <option value="">食品生技3</option>
-                                    <option value="">食品生技4</option>
+                                    <option value="">農業科技</option>
+                                    <option value="">觀光休閒</option>
+                                    <option value="">金屬機械</option>
+                                    <option value="">電子資通</option>
+                                    <option value="">文創服務</option>
+                                    <option value="">其他</option>
                                 </select>
                             </div>
 
@@ -367,7 +369,8 @@
                             </div>
 
                             <div class="btn_box">
-                                <input type="submit" value="儲存，下一步基本資料2" class="btn">
+                                <label for="" class="sr-only">儲存，下一步基本資料2</label>
+                                <input type="submit" value="儲存，下一步基本資料2" class="btn" onclick="location.href='application_b.html'">
                             </div>
                         </div>
                     </div>

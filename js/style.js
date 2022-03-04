@@ -40,7 +40,7 @@ $(document).ready(function() {
     });
 
     // footer
-    $('footer .top').slideUp();
+    $('footer .top').hide();
     $('.svg').click(function() {
         $('.top').slideToggle();
     })

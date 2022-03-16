@@ -1,5 +1,9 @@
-/* padding */
+:root {
+    --main-color:#1A7AB8;
+    --text-color:#272727;
+}
 
+/* padding */
 .pt-60 {
     padding-top: 60px;
 }
@@ -189,12 +193,14 @@
 
 .download li {
     padding: 8px 0;
-}
-
-.download li a {
     display: flex;
     align-items: center;
 }
+
+/* .download li a {
+    display: flex;
+    align-items: center;
+} */
 
 .download_icon {
     width: 35px;
@@ -202,6 +208,7 @@
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
+    display: block;
 }
 
 .download_icon.icon_odf {
@@ -216,7 +223,7 @@
     background-image: url(../images/doc.png);
 }
 
-.download li a span {
+.download li span {
     width: calc(100% - 105px);
     padding-left: 10px;
 }

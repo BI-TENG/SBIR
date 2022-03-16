@@ -112,6 +112,7 @@
 .m_dropdown_b li.active,
 .m_dropdown_b li.active a {
     color: #1A7AB8;
+    position: relative;
 }
 
 @media (min-width:992px) {

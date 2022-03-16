@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/page_style.css">
     <link rel="stylesheet" href="./css/enrol_page.css">
-    <link rel="stylesheet" href="./css/news.css">
+    <link rel="stylesheet" href="./css/form.css">
     <title>臺東SBIR</title>
 </head>
 
@@ -207,16 +207,20 @@
     </nav>
 
     <div class="main">
-        <!-- breadcrumb -->
+        <!-- 登入資訊 -->
         <div class="container">
-            <div aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                        <a href="#" title="首頁"><img src="./images/home.png" aria-hidden="true">首頁</a>
-                    </li>
-                    <li class="breadcrumb-item"><a href="#" title="最新消息">最新消息</a></li>
-                    <li class="breadcrumb-item active" aria-current="page" title="計畫公告">計畫公告</li>
-                </ol>
+            <div class="sign">
+                <div class="s_box">
+                    <img src="./images/people.png" aria-hidden="true">
+                    <p>東東有限公司</p>
+                </div>
+
+                <div class="s_box">
+                    <a href="">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <p>登出</p>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -228,19 +232,38 @@
                     <div class="c_left col-lg-3 col-12">
                         <a title="快速鍵-中央內容區" href="#left" accesskey="L" id="left">:::</a>
                         <div>
-                            <ul class="mobile_dropdown news_dropdown">
+                            <a href="javascript:;" title="會員功能" class="mobile_title">
+                                <p>會員功能</p>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+
+                            <ul class="mobile_dropdown">
                                 <li>
-                                    <a href="javascript:;" title="最新消息">最新消息</a>
+                                    <a href="case.html" title="案件清單">案件清單</a>
+                                </li>
+
+                                <li>
+                                    <a href="firm.html" title="公司資料維護">公司資料維護</a>
+                                </li>
+
+                                <li class="active">
+                                    <a href="javascript:;" title="申請階段">申請階段</a>
 
                                     <ul class="m_dropdown_b">
+                                        <li>
+                                            <a href="application_a.html" title="基本資料1">基本資料1</a>
+                                        </li>
+
                                         <li class="active">
-                                            <a href="" title="計畫公告">計畫公告</a>
+                                            <a href="application_b.html" title="基本資料2">基本資料2</a>
                                         </li>
+
                                         <li>
-                                            <a href="" title="轉知快訊">轉知快訊</a>
+                                            <a href="application_c.html" title="基本資料3">基本資料3</a>
                                         </li>
+
                                         <li>
-                                            <a href="" title="縣府消息">縣府消息</a>
+                                            <a href="application_d.html" title="應備資料上傳">應備資料上傳</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -251,78 +274,135 @@
                     <!-- 右側 -->
                     <div class="c_right col-lg-9 col-12">
                         <a title="快速鍵-中央內容區" href="#content" accesskey="C" id="content">:::</a>
+                        <div class="mobile_local">
+                            申請階段
+                        </div>
 
-                        <h2 class="news_title"><img src="./images/icon.png" alt="">計畫公告</h2>
+                        <div class="progressbar">
+                            <a href="application_a.html" title="申請計畫基本資料1"></a>
+                            <a href="application_b.html" title="申請計畫基本資料2" class="active"></a>
+                            <a href="application_c.html" title="申請計畫基本資料3"></a>
+                            <a href="application_d.html" title="應備資料上傳"></a>
+                        </div>
+
+                        <h2>申請計畫基本資料2</h2>
                         <div class="form">
                             <div class="form-group">
-                                <label for="newsMonth" class="sr-only">選擇月份</label>
-                                <select name="" id="newsMonth">
-                                    <option value="">選擇月份</option>
-                                    <option value="">2021年10月</option>
-                                    <option value="">2021年11月</option>
-                                    <option value="">2021年12月</option>
-                                    <option value="">2022年01月</option>
-                                    <option value="">2022年02月</option>
-                                </select>
+                                <label for="firm">*公司名稱：</label>
+                                <input type="text" class="form-control" id="firm" placeholder="請輸入中文名稱">
                             </div>
-                        </div>
-                        <div class="news_area">
-                            <div class="news_subject">
-                                <div class="news_subjectDate">發布日期</div>
-                                <div class="news_subjectTitle">標題</div>
+
+                            <div class="form-group">
+                                <label for="address_b">*通訊地址：</label>
+                                <input type="text" class="form-control" id="address_b">
                             </div>
-                            <div class="news_item">
-                                <div class="news_itemDate">2021-11-12</div>
-                                <div class="news_itemTitle"><a href="news_detail.html" title="【轉知】111年臺東縣店家再造暨雙語化輔導計畫開始招募嘍！">【轉知】111年臺東縣店家再造暨雙語化輔導計畫開始招募嘍！</a></div>
-                            </div>
-                            <div class="news_item">
-                                <div class="news_itemDate">2021-11-09</div>
-                                <div class="news_itemTitle"><a href="news_detail.html" title="臺東縣府修正【獎勵民間投資自治條例】提高獎勵優惠措施，歡迎企業投資臺東。">臺東縣府修正【獎勵民間投資自治條例】提高獎勵優惠措施，歡迎企業投資臺東。</a>
+
+                            <div class="form-group">
+                                <p class="form-group-title">*計畫主持人</p>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="name">姓名：</label>
+                                        <input type="text" class="form-control" id="name" placeholder="請輸入中文姓名">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="job">職稱：</label>
+                                        <input type="text" class="form-control" id="job">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="tel">連絡電話：</label>
+                                        <input type="tel" class="form-control" id="tel" placeholder="08-1234-5678">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="tel_b">行動電話：</label>
+                                        <input type="tel" class="form-control" id="tel_b" placeholder="0912-345-678">
+                                    </div>
+
+                                    <div class="form-group col-12">
+                                        <label for="email">電子郵件：</label>
+                                        <input type="email" class="form-control" id="email" placeholder="examply@gmail.com">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="news_item">
-                                <div class="news_itemDate">2021-11-01</div>
-                                <div class="news_itemTitle"><a href="news_detail.html" title="【轉知】臺北市政府辦理「2021臺北跨境電商年會」，敬邀各單位踴躍報名參加。">【轉知】臺北市政府辦理「2021臺北跨境電商年會」，敬邀各單位踴躍報名參加。</a>
+
+                            <div class="form-group">
+                                <p class="form-group-title">*計畫連絡人</p>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="name_c">姓名：</label>
+                                        <input type="text" class="form-control" id="name_c" placeholder="請輸入中文姓名">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="job_a">職稱：</label>
+                                        <input type="text" class="form-control" id="job_a">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="tel_c">連絡電話：</label>
+                                        <input type="tel" class="form-control" id="tel_c" placeholder="08-1234-5678">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="tel_d">行動電話：</label>
+                                        <input type="tel" class="form-control" id="tel_d" placeholder="0912-345-678">
+                                    </div>
+
+                                    <div class="form-group col-12">
+                                        <label for="email_b">電子郵件：</label>
+                                        <input type="email" class="form-control" id="email_b" placeholder="examply@gmail.com">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="news_item">
-                                <div class="news_itemDate">2021-10-30</div>
-                                <div class="news_itemTitle"><a href="news_detail.html" title="臺東SBIR成果展 盧秘書長：喜見多位返鄉青年加入 縣府將持續鼓勵推動產業創新研。">臺東SBIR成果展 盧秘書長：喜見多位返鄉青年加入
-                                        縣府將持續鼓勵推動產業創新研。</a></div>
+
+                            <div class="form-group">
+                                <label for="price">*計畫總經費：</label>
+                                <input type="number" class="form-control" id="price" placeholder="單位/千元">
                             </div>
 
-                            <div class="pager">
-                                <ul>
-                                    <li><a href="" title="移至第一頁"><i class="fa-solid fa-angles-left"></i></a></li>
-                                    <li><a href="" title="移至上一頁"><i class="fa-solid fa-angle-left"></i></a></li>
-                                    <li>
-                                        <div class="page-box">
-                                            <ul>
-                                                <li><a href="" class="" title="移至1">1</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li><a href="" class="" title="移至下一頁"><i class="fa-solid fa-angle-right"></i></a>
-                                    </li>
-                                    <li><a href="" class="" title="移至最終頁"><i class="fa-solid fa-angles-right"></i></a>
-                                    </li>
-                                </ul>
-                                <div class="pager_note">總頁數56頁 每頁顯示10則</div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="form-group col-md-8">
+                                        <label for="price_b">*補助款：</label>
+                                        <input type="number" class="form-control" id="price_b" placeholder="單位/千元">
+                                    </div>
+
+                                    <div class="form-group col-md-4">
+                                        <label for="price_c" class="color">百分比：</label>
+                                        <input type="number" class="form-control" id="price_c" placeholder="%">
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="news_back">
-                                <label for="" class="sr-only">回上頁</label>
-                                <input type="submit" name="" value="回上頁" id="" class="btn btn_back buttonM" onclick="location.href='news.html'">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="form-group col-md-8">
+                                        <label for="price_d">*自籌款：</label>
+                                        <input type="number" class="form-control" id="price_d" placeholder="單位/千元">
+                                    </div>
+
+                                    <div class="form-group col-md-4">
+                                        <label for="price_e" class="color">百分比：</label>
+                                        <input type="number" class="form-control" id="price_e" placeholder="%">
+                                    </div>
+                                </div>
                             </div>
 
+                            <div class="btn_box">
+                                <label for="" class="sr-only">儲存，下一步基本資料3</label>
+                                <input type="submit" value="儲存，下一步基本資料3" class="btn" onclick="location.href='application_c.html'">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-
-
     </div>
 
     <!-- footer -->
@@ -485,6 +565,7 @@
     <script src="./bootstrap/js/bootstrap.min.js"></script>
     <!-- style -->
     <script src="./js/style.js"></script>
+    <script src="./js/enrol_page.js"></script>
 </body>
 
 </html>

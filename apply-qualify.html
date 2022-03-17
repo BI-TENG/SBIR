@@ -206,7 +206,7 @@
     </nav>
 
     <div class="main">
-        <div class="container pt-60">
+        <div class="container">
             <!-- 麵包屑 -->
             <nav class="position-static breadcrumb-box" aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -547,7 +547,7 @@
         $(".qa_title").click(function() {
             $(this).toggleClass("active");
             $(this).parents(".qa").children(".qa_answer").slideToggle(300);
-            $(this).closest(".qa").siblings('.qa').children('qa_answer').slideUp();
+            $(this).parents(".qa").siblings('.qa').children('.qa_answer').slideUp();
         })
     </script>
 </body>

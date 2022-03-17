@@ -112,7 +112,7 @@
 .list-title {
     color: var(--main-color);
     padding: 8px 15px;
-    margin: 0;
+    margin: 0 0 1rem;
     border-bottom: 2px solid var(--main-color);
     font-size: 1.25rem;
 }
@@ -252,6 +252,7 @@
 }
 
 .download li span {
+    font-size: 1.25rem;
     width: calc(100% - 105px);
     padding-left: 10px;
 }

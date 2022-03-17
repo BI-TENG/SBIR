@@ -179,7 +179,7 @@ textarea {
     right: 5px;
 }
 
-.border_bt.active {
+.border_bt.active_bt {
     border-bottom: 1px dotted #1A7AB8;
     margin-bottom: 1rem;
 }

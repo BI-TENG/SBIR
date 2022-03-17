@@ -545,9 +545,10 @@
 
     <script>
         $(".qa_title").click(function() {
-            $(this).toggleClass("active");
             $(this).parents(".qa").children(".qa_answer").slideToggle(300);
             $(this).parents(".qa").siblings('.qa').children('.qa_answer').slideUp();
+            $(this).toggleClass("active");
+            $(this).parents(".qa").siblings('.qa').children('.qa_title').removeClass("active");
         })
     </script>
 </body>

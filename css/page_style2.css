@@ -14,7 +14,7 @@
 .mobile_dropdown_title {
     font-size: 1.25rem;
     font-weight: 500;
-    color: var(--main-color);
+    color: #136498;
     position: relative;
 }
 
@@ -271,7 +271,7 @@
 }
 
 .qa_title {
-    padding: 8px 25px;
+    padding: 15px 25px;
     background-color: #F2F2F2;
     border-radius: 9px;
     box-shadow: 4px 4px 4px rgba(72, 72, 72, 0.5);
@@ -283,6 +283,7 @@
 .qa_title h3 {
     width: calc(100% - 35px);
     font-size: 1.125rem;
+    line-height: 1.5;
     margin: 0;
 }
 

@@ -1,19 +1,36 @@
-<<<<<<< HEAD
+:root {
+    --main-color: #1A7AB8;
+    --text-color: #272727;
+}
+
+
+/* 微調 */
+
 #left,
 #content {
     display: inline-block;
 }
 
-
-/* padding */
-=======
-:root {
-    --main-color:#1A7AB8;
-    --text-color:#272727;
+.mobile_dropdown_title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--main-color);
+    position: relative;
 }
->>>>>>> main
+
+.mobile_dropdown_title::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 18px;
+    width: 80%;
+    height: 3px;
+    background: #F7B028;
+}
+
 
 /* padding */
+
 .pt-60 {
     padding-top: 60px;
 }
@@ -206,6 +223,7 @@
     display: flex;
     align-items: center;
 }
+
 
 /* .download li a {
     display: flex;

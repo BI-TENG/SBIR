@@ -10,10 +10,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background: #f8f8f8;
-}
-
 a {
     color: #212529;
     display: block;

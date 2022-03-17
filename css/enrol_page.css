@@ -47,7 +47,7 @@
 .mobile_title {
     font-size: 1.125rem;
     text-align: center;
-    color: #1A7AB8;
+    color: #136498;
     background: #CDEBFF;
     border-radius: 10px;
     padding: .5rem;
@@ -67,7 +67,7 @@
 }
 
 .mobile_dropdown {
-    background: #F2F2F2;
+    background: #F3F3F3;
     border-radius: 12px;
     padding: 1rem 0;
 }
@@ -82,7 +82,7 @@
 }
 
 .mobile_dropdown>li.active>a {
-    color: #1A7AB8;
+    color: #136498;
     font-weight: 500;
 }
 
@@ -93,7 +93,7 @@
     left: 0;
     width: 5px;
     height: 25px;
-    background: #1A7AB8;
+    background: #136498;
     border-radius: 2px;
 }
 
@@ -111,7 +111,7 @@
 
 .m_dropdown_b li.active,
 .m_dropdown_b li.active a {
-    color: #1A7AB8;
+    color: #136498;
     position: relative;
 }
 
@@ -136,7 +136,7 @@
         border-bottom: 1px solid #CDEBFF;
     }
     .mobile_dropdown li a {
-        color: #1A7AB8;
+        color: #136498;
         text-align: center;
         padding: 0.3rem;
     }

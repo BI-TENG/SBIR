@@ -157,13 +157,44 @@ textarea {
     border: 2px solid #1A7AB8 !important;
 }
 
+.edit_box {
+    margin: 0 -15px;
+}
+
+.edit {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: .8rem;
+}
+
+.form-group-title-box {
+    position: relative;
+}
+
+.plus {
+    color: #1A7AB8;
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
 @media (max-width:991px) {
     h2 {
         padding: .5rem 0;
     }
-    .col-md-11.pd {
+    .pd {
         padding: 0;
         margin-bottom: .5rem;
+    }
+}
+
+@media (max-width:767px) {
+    .edit .form-check {
+        margin-bottom: .2rem;
+    }
+    .edit {
+        margin-bottom: 0;
     }
 }
 

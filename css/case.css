@@ -43,7 +43,9 @@
 }
 
 .case_inner {
-    padding: 1rem;
+    margin: 1rem 0;
+    background: #CDEBFF;
+    border-radius: 9px;
 }
 
 .case_inner .row {
@@ -51,16 +53,14 @@
     background: #F2F2F2;
     box-shadow: 4px 4px 4px rgba(72, 72, 72, 0.5);
     padding: 1rem 0;
+    margin: 0;
 }
 
 .case_inner .state {
     color: #202E62;
     text-align: right;
     border-radius: 9px;
-    background: #CDEBFF;
     line-height: 1.6;
-    margin-right: -15px;
-    margin-left: -15px;
     padding: 1rem;
 }
 

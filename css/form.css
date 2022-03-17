@@ -179,6 +179,19 @@ textarea {
     right: 5px;
 }
 
+.border_bt.active {
+    border-bottom: 1px dotted #1A7AB8;
+    margin-bottom: 1rem;
+}
+
+.clone_field:last-of-type .border_bt.active {
+    border-bottom: none;
+}
+
+.form>.form-group {
+    margin-bottom: 1.5rem;
+}
+
 @media (max-width:991px) {
     h2 {
         padding: .5rem 0;

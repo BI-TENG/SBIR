@@ -289,15 +289,31 @@
                         <div class="form">
                             <div class="form-group">
                                 <p class="form-group-title">*是否進駐育成中心/開放實驗室、TTMAKER/利家工業區/深層海水創新研發中心</p>
-                                <div class="d-flex flex-wrap">
-                                    <div class="form-check mr-4">
-                                        <input class="form-check-input" type="radio" name="new" id="radio1" value="" checked>
-                                        <label class="form-check-label" for="radio1">育成中心</label>
-                                    </div>
+                                <div class="d-flex align-items-center flex-wrap">
+                                    <div class="edit_box d-flex flex-wrap">
+                                        <div class="edit col-md-6">
+                                            <div class="form-check col-md-4">
+                                                <input class="form-check-input" type="radio" name="new" id="radio1" value="" checked>
+                                                <label class="form-check-label" for="radio1">育成中心</label>
+                                            </div>
 
-                                    <div class="form-check mr-4">
-                                        <input class="form-check-input" type="radio" name="new" id="radio2" value="">
-                                        <label class="form-check-label" for="radio2">開放實驗室</label>
+                                            <div class="col-md-8 pd">
+                                                <label for="" class="sr-only">請填z寫機構全名</label>
+                                                <input type="text" class="form-control" id="" placeholder="請填寫機構全名">
+                                            </div>
+                                        </div>
+
+                                        <div class="edit col-md-6">
+                                            <div class="form-check col-md-4">
+                                                <input class="form-check-input" type="radio" name="new" id="radio2" value="">
+                                                <label class="form-check-label" for="radio2">開放實驗室</label>
+                                            </div>
+
+                                            <div class="col-md-8 pd">
+                                                <label for="" class="sr-only">請填寫機構全名</label>
+                                                <input type="text" class="form-control" id="" placeholder="請填寫機構全名">
+                                            </div>
+                                        </div>
                                     </div>
 
                                     <div class="form-check mr-4">
@@ -392,52 +408,64 @@
                                 </div>
                             </div>
 
-                            <div class="form-group">
-                                <p class="form-group-title">*技術或智慧財產權移轉單位</p>
+                            <div class="form-group plus_field">
+                                <div class="form-group-title-box">
+                                    <p class="form-group-title">*技術或智慧財產權移轉單位</p>
+                                    <a href="javascript:;" title="點擊新增欄位" class="plus"><i
+                                            class="fa-solid fa-plus"></i></a>
+                                </div>
                                 <div class="d-flex flex-wrap align-items-center">
                                     <div class="form-check mr-4">
-                                        <input class="form-check-input" type="radio" name="select" id="radio7" value="" checked>
-                                        <label class="form-check-label" for="radio7">是</label>
+                                        <input class="form-check-input" type="radio" name="select" id="radio23" value="" checked>
+                                        <label class="form-check-label" for="radio23">是</label>
                                     </div>
 
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="select" id="radio8" value="">
-                                        <label class="form-check-label" for="radio8">否</label>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="name">單位名稱：</label>
-                                    <input type="text" class="form-control" id="name" placeholder="請填全名">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="number">統一編號：</label>
-                                    <input type="number" class="form-control" id="number">
-                                </div>
-
-                                <p class="">項目</p>
-                                <div class="d-flex flex-wrap align-items-center">
-                                    <div class="form-check mr-4">
-                                        <input class="form-check-input" type="radio" name="select_e" id="radio20" value="" checked>
-                                        <label class="form-check-label" for="radio20">技術(關鍵智財)引進</label>
-                                    </div>
-
-                                    <div class="form-check mr-4">
-                                        <input class="form-check-input" type="radio" name="select_e" id="radio21" value="">
-                                        <label class="form-check-label" for="radio21">委託研究</label>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="select_e" id="radio22" value="">
-                                        <label class="form-check-label" for="radio22">委託勞務</label>
+                                        <input class="form-check-input" type="radio" name="select" id="radio24" value="">
+                                        <label class="form-check-label" for="radio24">否</label>
                                     </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="price">金額：</label>
-                                    <input type="number" class="form-control" id="price" placeholder="單位/千元">
+                                <div class="clone_field">
+                                    <div class="form-group">
+                                        <label for="">單位名稱：</label>
+                                        <input type="text" class="form-control" id="" placeholder="請填全名">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="">統一編號：</label>
+                                        <input type="number" class="form-control" id="">
+                                    </div>
+
+                                    <div>
+                                        <p class="">項目</p>
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <div class="form-check mr-4">
+                                                <input class="form-check-input" type="radio" name="select_e" id="" value="" checked>
+                                                <label class="form-check-label" for="">技術(關鍵智財)引進</label>
+                                            </div>
+
+                                            <div class="form-check mr-4">
+                                                <input class="form-check-input" type="radio" name="select_e" id="" value="">
+                                                <label class="form-check-label" for="">委託研究</label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="select_e" id="" value="">
+                                                <label class="form-check-label" for="">委託勞務</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="border_bt">
+                                        <div class="form-group">
+                                            <label for="">金額：</label>
+                                            <input type="number" class="form-control" id="" placeholder="單位/千元">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <input id="clone_fieldcnt" name="clone_fieldcnt" type="hidden" value="1">
 
                             <div class="form-group">
                                 <p class="form-group-title">*主要關鍵核心技術</p>

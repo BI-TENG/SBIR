@@ -284,6 +284,7 @@
     width: calc(100% - 35px);
     font-size: 1.125rem;
     line-height: 1.5;
+    font-weight: normal;
     margin: 0;
 }
 

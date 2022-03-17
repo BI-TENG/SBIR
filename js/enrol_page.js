@@ -15,4 +15,14 @@ $(document).ready(function() {
         $(this).next().slideToggle();
         $(this).closest('.case_inner').siblings('.case_inner').children('.state').slideUp();
     });
+
+    $('.plus').click(function() {
+        $('.clone_field').first().clone().appendTo(".plus_field");
+        $('.border_bt').addClass('active');
+
+        // var cnt = $('.clone_fieldcnt').val();
+        // var tab0 = '<div class="clone_field">aaaaa</div>';
+        // $('.clone_field').appendTo('tab0');
+        // $('.border_bt').addClass('active');
+    });
 })

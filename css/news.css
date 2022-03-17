@@ -9,11 +9,18 @@ body {
     /* padding-top: 3rem; */
 }
 
+.breadcrumb-item:first-of-type a {
+    display: flex;
+    align-items: center;
+}
+
 .breadcrumb-item {
     position: relative;
 }
 
 .breadcrumb-item img {
+    width: 16px;
+    height: 16px;
     display: inline-block;
     margin-right: 5px;
     vertical-align: sub;
@@ -33,6 +40,7 @@ body {
 
 .news_dropdown>li.active>a,
 .news_dropdown>li>a {
+    font-size: 1.25rem;
     width: 90%;
     color: #1A7AB8;
     font-weight: 500;
